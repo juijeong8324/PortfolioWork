@@ -1,0 +1,114 @@
+#header {
+  height: 70px;
+  /*헤더 고정 위함*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100; /*배경 투명하게*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8px 25px 8px;
+  font-family: "Whisper";
+}
+
+#header.scrolled {
+  background-color: #9753b690;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__logo {
+  padding-left: 10px;
+  color: gold;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+  font-size: 35px;
+}
+
+.navbar__menu li:hover {
+  /*마우스 위에 올려두면 배경 색 변하게*/
+  background-color: #ffffff30;
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toggle {
+  display: none; /*box가 작을 때 나와야 함*/
+  position: absolute; /*icon은 flex box의 문서 흐름에 나와서 위치해야 하므로 절대 위치 사용*/
+  right: 32px; /*오른쪽에서 32px 떨어진 곳에 위치*/
+  top: 32px;
+  color: gold;
+  font-size: 30px;
+}
+
+/* 반응형 사용시 - 너비가 작을 때 */
+@media screen and (max-width: 900px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  .navbar {
+    background-color: #a25cc0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar__menu li:hover {
+    /*마우스 위에 올려두면 배경 색 변하게*/
+    background-color: #cccccc30;
+    border-radius: 4px;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    align-items: center;
+    justify-content: center; /*flex를 하지 않고 중간에 오도록 하기 위해*/
+  }
+
+  .navbar__toggle {
+    align-items: center;
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+}

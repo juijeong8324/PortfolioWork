@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/home.jpg) no-repeat fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+main {
+  height: 100%;
+  font-family: "Gowun Batang";
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  animation: fadein 3s;
+}
+
+.submit {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+img {
+  width: auto;
+  height: 60vh;
+  border-radius: 5px;
+}
+
+form {
+  width: 80%;
+  background-color: #fff;
+  filter: drop-shadow(5px 5px 5px #02010290);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+  background-color: gold;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 버튼 호버 효과 */
+input[type="submit"]:hover,
+button:hover {
+  background-color: gold;
+}
+
+@keyframes fadein {
+  /*fade in 효과를 주기 위함*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 반응형 사용시 - 너비가 작을 때 */
+@media screen and (max-width: 900px) {
+  main {
+    padding-top: 200px;
+    font-family: "Gowun Batang";
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 5px;
+  }
+
+  .submit {
+    width: 100%;
+    display: flex;
+  }
+
+  form {
+    width: 100%;
+  }
+}

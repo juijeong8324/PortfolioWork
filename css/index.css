@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: url(../img/home.jpg) no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+  animation: shiny 10s ease infinite;
+}
+
+.introduce {
+  animation: fadein 3s;
+  display: flex;
+  padding-left: 50px;
+  height: 100%;
+  align-items: center;
+  font-family: "Gowun Batang";
+  font-size: 100px;
+  color: #5f067a;
+  text-shadow: #f4f1f1 1px 1px, #f4f1f1 2px 2px, #f4f1f1 3px 3px,
+    #f4f1f1 4px 4px, #f4f1f1 5px 5px, #f4f1f1 6px 6px;
+}
+
+@keyframes fadein {
+  /*fade in 효과를 주기 위함*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 그라데이션 색상 변화 애니메이션 */
+@keyframes shiny {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
