@@ -27,7 +27,12 @@ She learned how to create websites using html,css,js so I have no choice but to 
 <br>
 
 ### Response Web Design
+Depending on the page size, you will see the web page change as follows:    
 <img src="https://github.com/juijeong8324/PortfolioWork/assets/63052097/598e1dae-764e-4a68-aa01-5bec90db50e0" width=500 /> <br>
 <img src="https://github.com/juijeong8324/PortfolioWork/assets/63052097/2c80a238-3635-43c6-835f-ec7dc327ea3c" width=500 /> <br>
 <img src="https://github.com/juijeong8324/PortfolioWork/assets/63052097/47671397-bfb0-4965-b7db-99c0bcc3ea76" width=500 />  
 
+<br>
+
+## Update
+Ver1
